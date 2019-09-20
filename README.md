@@ -115,7 +115,7 @@ source ~/.bashrc
    a. if error `Out of memory` shows, in `.cfg-file`, increase `subdivisions = 16, 32 or 64` following [this](https://github.com/AlexeyAB/darknet/blob/0039fd26786ab5f71d5af725fc18b3f521e7acfd/cfg/yolov3.cfg#L4)
 
 1. Download our [dataset](https://github.com/jwangjie/UAV-Vehicle-Detection-Dataset), put all files in one folder `dji`, and add `dji` in `data` folder
-2. **Training:**  `./darknet detector train data/dji.data cfg/yolov3_dji.cfg darknet53.conv.74
+2. **Training:**  `./darknet detector train data/dji.data cfg/yolov3_dji.cfg darknet53.conv.74`
 
 ---  
 
