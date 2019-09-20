@@ -1,9 +1,9 @@
-# Step by step implementation of fine-tuning the the UAV vehicle detector
+## Step by step implementation of fine-tuning the the UAV vehicle detector
 
-## System requirement: Ubuntu 16.04, OpenCV 3.4.0 and CUDA 9.0
+### System requirement: Ubuntu 16.04, OpenCV 3.4.0 and CUDA 9.0
 
 ---
-## Install dependencies (OpenCV 3.4.0 and CUDA 9.0)
+### Install dependencies (OpenCV 3.4.0 and CUDA 9.0)
 0. update apt-get   
 ``` bash 
 sudo apt-get update
@@ -70,7 +70,7 @@ source ~/.bashrc
 
 ---
 
-## Install YOLOv3
+### Install YOLOv3
 
 1. **Install YOLOv3:** [AlexeyAB/darknet](https://github.com/AlexeyAB/darknet)   
    
@@ -78,7 +78,7 @@ source ~/.bashrc
    
 ---
 
-## Test YOLOv3 
+### Test YOLOv3 
 
 1. Download pretrained yolo [weights](https://pjreddie.com/media/files/yolov3.weights), put it inside `darknet` folder    
    
@@ -97,18 +97,18 @@ source ~/.bashrc
 
 ---
 
-## Use our multiple vehicle detector 
+### Use our multiple vehicle detector 
 
 1. Clone this [repository](https://github.com/jwangjie/Fine-tune-YOLOv3) 
-   1) replace the `[Makefile](https://github.com/jwangjie/Fine-tune-YOLOv3/blob/master/Makefile)` in `darknet` folder
-   2) add `yolov3_dji.cfg` file in `cfg` folder
-   3) add `dji.data, dji.names, test.txt, train.txt` files in `data` folder
+   1) replace the [Makefile](https://github.com/jwangjie/Fine-tune-YOLOv3/blob/master/Makefile) in `darknet` folder
+   2) add [yolov3_dji.cfg](https://github.com/jwangjie/Fine-tune-YOLOv3/blob/master/cfg/yolov3_dji.cfg) in `cfg` folder
+   3) add `dji.data, dji.names, test.txt, train.txt` [files](https://github.com/jwangjie/Fine-tune-YOLOv3/tree/master/data) in `data` folder
 2. download our [trained weight](https://drive.google.com/file/d/1xGxTxgevj6UPXTXNsUbt9g3Oogr3pATQ/view)
    **Test your video:**  `./darknet detector demo data/dji.data cfg/yolov3_dji.cfg yolov3_dji_final.weights yourVideo.mp4 -out_filename yourVideo.avi`
 
 --- 
 
-## Fine-tune Training using our dataset 
+### Fine-tune Training using our dataset 
 
 0. In general, follow [How to Train](https://github.com/AlexeyAB/darknet#how-to-train-to-detect-your-custom-objects) 
    
