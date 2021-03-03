@@ -111,7 +111,7 @@ source ~/.bashrc
    1) replace the [Makefile](https://github.com/jwangjie/Fine-tune-YOLOv3/blob/master/Makefile) in `darknet` folder
    2) add [yolov3_dji.cfg](https://github.com/jwangjie/Fine-tune-YOLOv3/blob/master/cfg/yolov3_dji.cfg) in `cfg` folder
    3) add `dji.data, dji.names, test.txt, train.txt` [files](https://github.com/jwangjie/Fine-tune-YOLOv3/tree/master/data) in `data` folder
-2. download our [trained weight](https://drive.google.com/file/d/1xGxTxgevj6UPXTXNsUbt9g3Oogr3pATQ/view)
+2. download our [trained weight](https://drive.google.com/file/d/1CPfK_8MZ0d50Xm30fhVA5ESIquNktopy/view?usp=sharing)
    
    **Test your video:**  `./darknet detector demo data/dji.data cfg/yolov3_dji.cfg yolov3_dji_final.weights yourVideo.mp4 -out_filename yourVideo.avi`
 
